@@ -11,7 +11,7 @@
     Add Client
   </div>
   <div class="card-body">
-    <form #f="ngForm" (ngsubmit)="onSubmit(f)" novalidate>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
       <div class="form-group">
         <label for="firstName">First Name</label>
         <input type="text" class="form-control" [(ngModel)]="client.firstName" name="firstName" #clientFirstName="ngModel" minlength="2" required />
