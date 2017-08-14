@@ -1,3 +1,26 @@
-<p>
-  login works!
-</p>
+<div class="row">
+  <div class="col"></div>
+  <div class="col-6 align-self-center">
+    <div class="card">
+      <div class="card-body">
+        <img class="mx-auto d-block" src="/assets/img/angular.svg" alt="" width="100">
+        <h1 class="text-center">Login</h1>
+        <form (submit)="onSubmit()">
+          <div class="form-control">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" [(ngModel)]="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" [(ngModel)]="password" name="password" required>
+            </div>
+
+            <input type="submit" value="Submit" class="btn btn-primary btn-block">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col"></div>
+</div>
